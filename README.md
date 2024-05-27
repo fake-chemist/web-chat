@@ -9,19 +9,8 @@ Thus runs into a context/token limit for chat gpt for many websites.
 
 By adding more storage features like S3, NeonDB (storing chats) and Pinecone (store vector embeddings), 
 we take into consideration our computational resourse limitations and effectively work around them. 
-
----
-Tech and langauages: 
-Next.js
-Tyepscript (+ tailwind css) 
-
-
-Clerk (auth)
-Stripe (optional, used in dev mode for learning purposes)
-Open AI API
-Neon DB (user + message storage) 
-Pinecone (vector storage)
----
+------
+## Instructions: 
 
 To install dependecies: 
 npm install 
@@ -29,7 +18,22 @@ npm install
 To run locally: 
 npm run dev
 
------
+localhost/web-chat (paste url and chat - this endpoint does not use any storage so will hit token limit for open ai API)
+
+localhost/chat/[chatId] ( uses dbs so will not hit toke limit). 
+
+---
+## Tech and langauages: 
+
+Next.js
+Tyepscript (+ tailwind css) 
+Clerk (auth)
+Stripe (optional, used in dev mode for learning purposes)
+Open AI API
+Neon DB (user + message storage) 
+Pinecone (vector storage)
+
+---
 
 Requried variables in env.local file: 
 
