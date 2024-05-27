@@ -9,7 +9,9 @@ Thus runs into a context/token limit for chat gpt for many websites.
 
 By adding more storage features like S3, NeonDB (storing chats) and Pinecone (store vector embeddings), 
 we take into consideration our computational resourse limitations and effectively work around them. 
+
 ------
+
 ## Instructions: 
 
 To install dependecies: 
@@ -34,7 +36,6 @@ Neon DB (user + message storage)
 Pinecone (vector storage)
 
 ---
-
 Requried variables in env.local file: 
 
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
